@@ -1,6 +1,8 @@
 DROP DATABASE IF EXISTS musicStore_db;
 CREATE DATABASE musicStore_db;
 
+USE musicStore_db;
+
 CREATE TABLE employee (
     id INT NOT NULL,
     first_name VARCHAR(30) NOT NULL,
@@ -9,7 +11,7 @@ CREATE TABLE employee (
     REFERENCES roles(id)
     ON DELETE SET NULL,
     FOREIGN KEY(manager_id)
-    REFERENCES manager(id)
+    REFERENCES employee(id)
     ON DELETE SET NULL,
     PRIMARY KEY (id)
 );
