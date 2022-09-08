@@ -122,9 +122,75 @@
 // 
 // ===========================================
 // 
-// 
-// 
-// 
+// split initial options by { Department, Role, Employee }
+
+//  Role {
+
+//     -view all Roles // API View(Get)
+//       ->show table of:
+//          -job title
+//          -role id
+//          -dept associated role
+//          -salary for role
+
+//     -add a Role // API CREATE(Post)
+//       -prompt to enter:
+//          +name
+//          +salary
+//          +dept for role
+//       ->role added to db
+
+//  } 
+
+//  Department {
+
+//     -view all Departments // API View(Get)
+
+//       -> show table of:
+//          -dept names
+//          -dept ids
+
+//     -add a Department // API CREATE(Post) 
+
+//       -prompt to enter:
+//          + name of dept
+//       -> dept is added to db
+
+//  } 
+
+//  Employee {
+
+//     -view all Employees // API View(Get)
+
+//       -> show table of:
+//          -emp ids
+//          -first names
+//          -last names
+//          -job titles
+//          -departments
+//          -salries
+//          -manger
+
+//     -add a Employee // API CREATE(Post)
+
+//       -prompt to enter:
+//          + first name
+//          + last name
+//          + role
+//          +manager
+
+//       -> emp added to db
+
+//     -update an employee role // API UPDATE(PUT)
+
+//       -prompt to select:
+//          -employee to update
+//          + new role
+
+//       -> info updated in db
+
+//  } 
+
 // 
 // 
 // 

@@ -8,4 +8,15 @@ const printLogo = () => console.log(`
   +----------------------------------------------------------+
 `);
 
-module.exports = {printLogo};
+const addRole = function () {
+  // add a new role, assignable to an Employee
+}
+const addDepartment = function () {
+  // add a new Department, assignable to an Employee
+}
+const addEmployee = function () {
+  // add a new Employee, assignable to a Manager(role)
+}
+
+
+module.exports = { printLogo, addRole, addDepartment, addEmployee };
