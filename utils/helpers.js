@@ -17,6 +17,9 @@ const addDepartment = function () {
 const addEmployee = function () {
   // add a new Employee, assignable to a Manager(role)
 }
+const updateEmployee = function () {
+  // updates an Employee Role
+}
 
 
-module.exports = { printLogo, addRole, addDepartment, addEmployee };
+module.exports = { printLogo, addRole, addDepartment, addEmployee, updateEmployee };

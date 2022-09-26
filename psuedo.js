@@ -205,4 +205,18 @@
 // 
 // 
 // 
-// 
+//      Match a <,
+//       followed by 1 or more of any lowercase letter from a to z,
+//       followed by any number of matches, one or more times, with any character that is not a <,
+//       followed by a >,
+//       followed by any number of any characters but escaped characters,
+//       followed by </ + any number of any characters but escaped characters + >,
+//       OR one or more white space characters + /> 
+//       
+
+console.log(/ ^ <( [ a-z ]+ ) ( [ ^< ]+ )* ( ?:> ( .* ) <\/\1> | \s+\/> ) $ /.test());
+//              |         |         |
+//   starts with <        |  anything not a <
+//          then v        |
+//      (lowercase letters a through z)
+//         + means 
