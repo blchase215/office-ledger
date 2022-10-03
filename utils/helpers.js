@@ -8,18 +8,42 @@ const printLogo = () => console.log(`
   +----------------------------------------------------------+
 `);
 
-const addRole = function () {
-  // add a new role, assignable to an Employee
+const viewAllEmployees = function () {
+  // view Employees table
 }
-const addDepartment = function () {
-  // add a new Department, assignable to an Employee
+
+const viewAllRoles = function () {
+  // view Roles table
 }
+
+const viewAllDepartments = function () {
+  // view Departments table
+}
+
 const addEmployee = function () {
   // add a new Employee, assignable to a Manager(role)
 }
+
+const addRole = function () {
+  // add a new role, assignable to an Employee
+}
+
+const addDepartment = function () {
+  // add a new Department, assignable to an Employee
+}
+
 const updateEmployee = function () {
   // updates an Employee Role
 }
 
 
-module.exports = { printLogo, addRole, addDepartment, addEmployee, updateEmployee };
+module.exports = { 
+  printLogo,
+  viewAllEmployees,
+  viewAllRoles,
+  viewAllDepartments,
+  addEmployee,
+  addRole,
+  addDepartment,
+  updateEmployee
+};

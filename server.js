@@ -4,7 +4,7 @@ const express = require('express');
 const inquirer = require('inquirer');
 
 // External functions
-const {printLogo} = require('./utils/helpers');
+const { printLogo } = require('./utils/helpers');
 
 const app = express();
 app.use(express.urlencoded({ extended: false }));
